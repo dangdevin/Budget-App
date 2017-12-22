@@ -1,7 +1,7 @@
-# Money on my Mind, and my mind on my REST API
+# Personal Budget Application
 
-Name: Devin Dang
-Pitt ID: ded57
+by Devin Dang
+
 
 ## Installation
 
@@ -14,5 +14,5 @@ Pitt ID: ded57
 
 Run program with `flask run`. Find the `budget.py` file and open it.
 
-## Notes to the Grader
+## Notes
 The program runs fine. There are some issues with it. Adding a new category and a new purchase works. Deleting a category works too, but you have to refresh it in order to see the changes and it glitches with the amount spent.
