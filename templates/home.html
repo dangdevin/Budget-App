@@ -1,0 +1,69 @@
+<!-- Devin Dang
+	CS 1520
+	Assignment 5 -->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Simple Budget Application</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+		</head>
+
+	<body>
+		<h1>Simple Budget Application</h1>
+
+		<table id = "theTable">
+			<tr id = "rowOfLabels">
+				<td> Categories: </td>
+			</tr>
+
+			<tr id = "rowOfLimits">
+				<td> Monthly Limit: </td>
+			</tr>
+
+			<tr id = "rowOfSpending">
+				<td> Spent: </td>
+			</tr>
+
+			<tr id = "rowOfRemaining">
+				<td> Remaining: </td>
+			</tr>
+		</table>
+
+		<br>
+
+		<h3> Add a New Category </h3>
+		<br>
+		<form name="categoryForm" id="categoryForm">
+			<input type="text" id="categoryName" required />
+			<input type="number" id="categoryValue" placeholder="Limit per Month" required />
+			<input type="button" id="categoryButton" value="Submit" />
+		</form>
+
+		<br>
+
+		<h3> Add a New Purchase </h3>
+		<br>
+		<form name="purchaseForm" id="purchaseForm">
+			<input type="date" id="purchaseDate" />
+			<input type="text" id="purchaseName" required />
+			<input type="number" id="amountSpent" placeholder="Amount Spent" required /> 
+			<select id="categoryDropdown" required>
+
+			</select>
+			<input type="button" id="purchaseButton" value="Submit" />
+		</form>
+
+		<br>
+
+		<h3>Delete a Category</h3>
+		<form id = "deleteForm">
+			<select id = "deleteDrop">
+
+			</select>
+			<input type = "button" id="deleteButton" value="Delete"/>
+		</form>
+
+	</body>
+
+</html>
